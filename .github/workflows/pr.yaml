@@ -1,0 +1,15 @@
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+  
+jobs:
+  my-job:
+    name: My Job
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Hello World
+      run: |
+        echo "Hello, World!"
